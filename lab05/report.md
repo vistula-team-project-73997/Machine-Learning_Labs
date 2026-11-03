@@ -1,6 +1,6 @@
 # Lab 5 - Frameworks and automatic differentiation
 
-G M Robi Farhan Rojob | Student number 73997 | Machine Learning, Group 01
+
 
 This is a runnable preparation example. Review the choices and explanations before using it in class.
 
