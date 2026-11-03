@@ -1,0 +1,60 @@
+{
+  "operation": "sin(x).sum()",
+  "tensors": [
+    {
+      "name": "backing",
+      "shape": [
+        1024,
+        2048
+      ],
+      "dtype": "torch.float64",
+      "stride": [
+        2048,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "bytes_per_element": 8,
+      "shares_backing_storage": true
+    },
+    {
+      "name": "view",
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "torch.float64",
+      "stride": [
+        2048,
+        2
+      ],
+      "contiguous": false,
+      "storage_offset": 0,
+      "bytes_per_element": 8,
+      "shares_backing_storage": true
+    },
+    {
+      "name": "contiguous",
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "torch.float64",
+      "stride": [
+        1024,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "bytes_per_element": 8,
+      "shares_backing_storage": false
+    }
+  ],
+  "median_seconds": {
+    "contiguous": 0.002690213332728793,
+    "noncontiguous_view": 0.0036530699968958893,
+    "copy_then_operation": 0.004217296668017904,
+    "copy_only": 0.0013191866688430308
+  },
+  "view_over_contiguous": 1.3579108959327144
+}

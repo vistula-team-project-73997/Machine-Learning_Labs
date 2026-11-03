@@ -1,0 +1,34 @@
+LAB 5 - G M Robi Farhan Rojob - 73997
+
+Use the SAME course project as the previous labs:
+E:\semester 5\Lab01_GM_Robi_Farhan_Rojob_73997_submission
+
+Expand this folder in the project tree:
+Lab01_GM_Robi_Farhan_Rojob_73997 > lab05
+
+1. Open lab05/main.py. Do not run an earlier lab's main.py.
+2. Select the prepared run configuration named Lab 5, then click Run.
+   Alternatively, right-click lab05/main.py and select Run 'main'.
+3. Use the tested Python 3.11.8 interpreter:
+   C:\Users\rojob\Documents\ChatGPT\Machine Learning\.venv-lab2\Scripts\python.exe
+4. Wait for all five scalar/PyTorch training runs and final PASS messages.
+5. Read lab05/report.md and lab05/lab5 explanation.pdf.
+
+The launcher runs correctness tests, validates 24 scalar gradients, trains
+the 2->8->1 model with sigmoid/BCE five times in each engine, compares
+warmed eager/traced inference and measures non-contiguous tensor costs.
+The default torch.compile backend cannot find a C++ compiler here, so
+tracing is used as allowed by the manual. No additional installation is
+needed for the recorded comparison.
+
+From the course repository root, run:
+& 'C:\Users\rojob\Documents\ChatGPT\Machine Learning\.venv-lab2\Scripts\python.exe' lab05/main.py
+
+To check saved evidence without retraining:
+& 'C:\Users\rojob\Documents\ChatGPT\Machine Learning\.venv-lab2\Scripts\python.exe' lab05/src/verify_results.py
+
+Evidence is under lab05/results. Rerunning refreshes the report and timings.
+The folder .venv-lab2 has a historical name; it also contains the packages
+for Labs 3, 4 and 5. Bring the digital manual from lab05/references or print it.
+Review the guide, understand the implementation and follow the opening
+classroom instructions. No work has been sent to the instructor.

@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-11-03T18:42:33.795710+01:00",
+  "python": "3.11.8 (main, Feb 25 2024, 03:41:44) [MSC v.1929 64 bit (AMD64)]",
+  "executable": "C:\\Users\\rojob\\Documents\\ChatGPT\\Machine Learning\\.venv-lab2\\Scripts\\python.exe",
+  "torch": "2.3.1+cpu",
+  "numpy": "1.26.4",
+  "sklearn": "1.5.0",
+  "matplotlib": "3.9.0",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 197 Stepping 2, GenuineIntel",
+  "device": "cpu",
+  "cuda_available": false,
+  "threads": 1,
+  "interop_threads": 1,
+  "seed": 42,
+  "compile_available": true,
+  "trace_available": true
+}

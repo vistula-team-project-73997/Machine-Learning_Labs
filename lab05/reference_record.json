@@ -1,0 +1,62 @@
+{
+  "manual_source": "C:/Users/rojob/Downloads/Lab Manual_ Labs 05.pdf",
+  "manual_sha256": "68d672f4e761a188c0ccca75d21c26cb79dce69a76fb13dfbdde0a1e188787f9",
+  "manual_printed_page": 7,
+  "textbook_source": "E:\\introduction-to-machine-learning-systems_compress.pdf",
+  "textbook_sha256": "364ed2c2f3c620cf4202eb8ec77f37bda21e10cff7e37f59815fef81af3e6c9a",
+  "textbook_edition": "July 31, 2025",
+  "printed_to_viewer_offset": 52,
+  "reading": {
+    "7.3": {
+      "printed": [
+        310,
+        350
+      ],
+      "viewer": [
+        362,
+        402
+      ]
+    },
+    "7.4": {
+      "printed": [
+        350,
+        353
+      ],
+      "viewer": [
+        402,
+        405
+      ]
+    },
+    "7.6": {
+      "printed": [
+        356,
+        359
+      ],
+      "viewer": [
+        408,
+        411
+      ]
+    },
+    "7.7": {
+      "printed": [
+        359,
+        363
+      ],
+      "viewer": [
+        411,
+        415
+      ]
+    },
+    "7.8": {
+      "printed": [
+        363,
+        369
+      ],
+      "viewer": [
+        415,
+        421
+      ]
+    }
+  },
+  "note": "Section 7.4 has different wording in the supplied edition. AI-assisted preparation; personal review and attendance are not certified."
+}

@@ -1,0 +1,11 @@
+{
+  "expression": "sum_i relu((a_i*b_i+c_i)**2)",
+  "dtype": "float64",
+  "epsilon": 1e-06,
+  "coordinates": 24,
+  "threshold": 1e-06,
+  "engine_loss": 2.085286571543675,
+  "pytorch_loss": 2.085286571543675,
+  "max_torch_error": 0.0,
+  "max_numerical_error": 1.6230849997356245e-10
+}

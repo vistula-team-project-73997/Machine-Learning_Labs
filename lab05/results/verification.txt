@@ -1,0 +1,20 @@
+test_full_model_gradients (__main__.AutodiffTests.test_full_model_gradients) ... C:\Users\rojob\Documents\ChatGPT\Machine Learning\.venv-lab2\Lib\site-packages\matplotlib\_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+  prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+C:\Users\rojob\Documents\ChatGPT\Machine Learning\.venv-lab2\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+C:\Users\rojob\Documents\ChatGPT\Machine Learning\.venv-lab2\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+C:\Users\rojob\Documents\ChatGPT\Machine Learning\.venv-lab2\Lib\site-packages\matplotlib\_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+  ParserElement.enablePackrat()
+In C:\Users\rojob\Documents\ChatGPT\Machine Learning\.venv-lab2\Lib\site-packages\matplotlib\mpl-data\stylelib\classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In C:\Users\rojob\Documents\ChatGPT\Machine Learning\.venv-lab2\Lib\site-packages\matplotlib\mpl-data\stylelib\classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+ok
+test_long_graph (__main__.AutodiffTests.test_long_graph) ... ok
+test_mixed_operations (__main__.AutodiffTests.test_mixed_operations) ... ok
+test_relu_convention_and_power_zero (__main__.AutodiffTests.test_relu_convention_and_power_zero) ... ok
+test_reused_node_and_repeated_edges (__main__.AutodiffTests.test_reused_node_and_repeated_edges) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.954s
+
+OK

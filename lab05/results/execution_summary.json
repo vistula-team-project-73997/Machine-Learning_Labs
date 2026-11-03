@@ -1,0 +1,57 @@
+{
+  "setup": {
+    "selected": "traced",
+    "compile_error": "BackendCompilerFailed: backend='inductor' raised: InvalidCxxCompiler: No working C++ compiler found in torch._inductor.config.cpp.cxx: (None, 'g++')",
+    "trace_creation_seconds": 0.03615030006039888,
+    "compile_wrapper_seconds": 0.006782600074075162,
+    "compile_creation_and_first_call_seconds": null,
+    "note": "First-use observations may reuse on-disk compiler caches; not guaranteed cache-cold."
+  },
+  "results": [
+    {
+      "batch": 1,
+      "median_seconds": {
+        "eager": 1.1719999990115564e-05,
+        "traced": 8.804666576907038e-06
+      },
+      "speedup_vs_eager": {
+        "eager": 1.0,
+        "traced": 1.3311123013851416
+      },
+      "first_call_seconds": {
+        "eager": 0.00011209992226213217,
+        "traced": 0.0007874999428167939
+      }
+    },
+    {
+      "batch": 32,
+      "median_seconds": {
+        "eager": 1.2258666877945264e-05,
+        "traced": 9.970666918282707e-06
+      },
+      "speedup_vs_eager": {
+        "eager": 1.0,
+        "traced": 1.2294731113188795
+      },
+      "first_call_seconds": {
+        "eager": 3.899994771927595e-05,
+        "traced": 0.00017749995458871126
+      }
+    },
+    {
+      "batch": 256,
+      "median_seconds": {
+        "eager": 1.788900000974536e-05,
+        "traced": 1.4886000038435061e-05
+      },
+      "speedup_vs_eager": {
+        "eager": 1.0,
+        "traced": 1.2017331696598597
+      },
+      "first_call_seconds": {
+        "eager": 9.220000356435776e-05,
+        "traced": 3.460003063082695e-05
+      }
+    }
+  ]
+}

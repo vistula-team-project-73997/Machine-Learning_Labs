@@ -50,3 +50,26 @@ Five conflicting-label groups and remaining cross-split duplicate overlap
 are documented. AI-assisted source and draft conclusions require student
 review. Complete the 50-row manual worksheet yourself before submission;
 completed human inspection is not claimed.
+
+## Lab 5
+
+Lab 5 implements a scalar automatic-differentiation engine, validates it
+against PyTorch and numerical gradients, trains identical 2->8->1 models
+on make_moons, compares warmed eager/traced execution and measures the
+cost of non-contiguous tensor storage. Five-run training medians and raw
+timing blocks are retained under `lab05/results/`.
+
+Open `lab05/main.py` in this same course project and select the prepared
+PyCharm run configuration `Lab 5`. Use the tested Python 3.11.8 environment
+documented in `lab05/RUN_IN_PYCHARM.txt`. The requirements are recorded in
+`lab05/requirements-lab05.txt`; the entire course stack is not required.
+
+Read `lab05/report.md`, `lab05/study_guide.md`, `lab05/TASK_CHECKLIST.md`
+and `lab05/lab5 explanation.pdf`. The digital manual is in
+`lab05/references/`. The default compilation backend has no working C++
+compiler here, so the manual-approved tracing fallback is used.
+
+The maximum numerical-gradient error is 1.623e-10 and the engine matches
+PyTorch on the required expression. Five correctness tests and saved-artifact
+verification pass. This is AI-assisted preparation; understand the code,
+review your prescribed reading and follow the opening classroom instructions.

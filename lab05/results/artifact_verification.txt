@@ -1,0 +1,1 @@
+PASS: saved gradients, five-run medians, matching trained weights, BCE, fresh-process trace reload, execution timings and tensor-layout timings.
