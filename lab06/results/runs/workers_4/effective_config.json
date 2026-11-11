@@ -1,0 +1,103 @@
+{
+  "config": {
+    "student": {
+      "name": "G M Robi Farhan Rojob",
+      "id": "73997"
+    },
+    "seed": 42,
+    "device": "cpu",
+    "threads": 4,
+    "dataset": {
+      "name": "FashionMNIST",
+      "root": "../data",
+      "download": false,
+      "train_size": 55000,
+      "validation_size": 5000,
+      "mean": 0.286,
+      "std": 0.353
+    },
+    "model": "CNN",
+    "training": {
+      "batch_size": 128,
+      "num_workers": 0,
+      "epochs": 5,
+      "optimizer": "Adam",
+      "scheduler": "none",
+      "adam_lr": 0.001,
+      "sgd_lr": 0.01,
+      "momentum": 0.9,
+      "weight_decay": 0.0,
+      "accumulation_steps": 1,
+      "checkpoint_every": 1
+    },
+    "schedulers": {
+      "StepLR": {
+        "step_size": 3,
+        "gamma": 0.5
+      },
+      "CosineAnnealingLR": {
+        "T_max": 10,
+        "eta_min": 0.0
+      },
+      "ReduceLROnPlateau": {
+        "factor": 0.5,
+        "patience": 1,
+        "threshold": 0.001
+      }
+    },
+    "studies": {
+      "workers": [
+        0,
+        1,
+        2,
+        4,
+        8
+      ],
+      "worker_epochs": 3,
+      "batch_sizes": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "batch_epochs": 5,
+      "optimizers": [
+        "SGD",
+        "Adam"
+      ],
+      "schedules": [
+        "StepLR",
+        "CosineAnnealingLR",
+        "ReduceLROnPlateau"
+      ],
+      "optimizer_epochs": 10,
+      "accumulation_epochs": 3,
+      "resume_epochs": 6,
+      "interrupt_after": 3
+    },
+    "tracking": {
+      "directory": "results/mlruns",
+      "experiment": "Lab06_73997"
+    },
+    "memory": {
+      "sample_interval_seconds": 0.02
+    },
+    "_config_path": "C:\\Users\\rojob\\Documents\\ChatGPT\\Machine Learning\\lab06\\config.yaml"
+  },
+  "settings": {
+    "batch_size": 128,
+    "num_workers": 4,
+    "epochs": 3,
+    "optimizer": "Adam",
+    "scheduler": "none",
+    "adam_lr": 0.001,
+    "sgd_lr": 0.01,
+    "momentum": 0.9,
+    "weight_decay": 0.0,
+    "accumulation_steps": 1,
+    "checkpoint_every": 1,
+    "name": "workers_4",
+    "study": "workers"
+  }
+}

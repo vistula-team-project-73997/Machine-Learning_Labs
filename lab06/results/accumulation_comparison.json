@@ -1,0 +1,12 @@
+{
+  "max_parameter_difference": 0.002953477203845978,
+  "max_train_loss_difference": 4.380553852428859e-05,
+  "max_validation_accuracy_difference": 0.00039999999999995595,
+  "effective_batch": 256,
+  "micro_batch": 64,
+  "accumulation_steps": 4,
+  "epochs": 3,
+  "optimizer_steps_per_epoch": 215,
+  "final_partial_group_samples": 216,
+  "similar_behavior": true
+}

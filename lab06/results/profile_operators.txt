@@ -1,0 +1,65 @@
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                                   Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg    # of Calls  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  
+enumerate(DataLoader)#_SingleProcessDataLoaderIter._...        32.73%        4.528s        46.81%        6.475s      15.059ms           430  
+                             aten::convolution_backward        13.95%        1.930s        14.22%        1.967s       2.287ms           860  
+                          aten::max_pool2d_with_indices        10.01%        1.384s        10.01%        1.384s       1.609ms           860  
+                               aten::threshold_backward         7.72%        1.068s         7.72%        1.068s       1.242ms           860  
+                               aten::mkldnn_convolution         4.02%     555.919ms         5.13%     709.002ms     824.421us           860  
+                                   phase/optimizer_step         2.47%     341.736ms         7.46%        1.033s       2.401ms           430  
+                                            aten::fill_         2.15%     297.966ms         2.15%     297.966ms       0.850us        350663  
+                                         aten::_to_copy         2.13%     294.295ms         4.06%     561.435ms       3.148us        178330  
+                                             aten::sqrt         1.87%     258.694ms         1.87%     258.694ms     100.269us          2580  
+                                    aten::empty_strided         1.82%     251.926ms         2.01%     277.345ms       1.186us        233772  
+                                              aten::div         1.60%     220.699ms         3.05%     421.664ms       7.323us         57580  
+                                               aten::to         1.59%     219.613ms         5.00%     691.097ms       1.731us        399196  
+                                        aten::clamp_min         1.50%     207.175ms         1.50%     207.175ms     240.901us           860  
+                               Optimizer.step#Adam.step         1.36%     188.677ms         4.68%     647.802ms       1.507ms           430  
+                                              aten::any         1.04%     143.845ms         1.49%     205.854ms       3.743us         55000  
+                                         phase/backward         0.98%     135.750ms        26.44%        3.658s       8.506ms           430  
+                                          aten::permute         0.90%     124.926ms         0.91%     125.894ms       2.289us         55000  
+                                               aten::eq         0.90%     124.112ms         2.21%     306.266ms       5.525us         55430  
+                                          phase/forward         0.84%     116.742ms        19.00%        2.628s       6.112ms           430  
+                 aten::max_pool2d_with_indices_backward         0.80%     111.333ms         1.66%     229.199ms     266.510us           860  
+                                           aten::select         0.78%     108.319ms         0.79%     109.602ms       0.996us        110000  
+                                               aten::mm         0.69%      95.328ms         0.69%      95.329ms     110.848us           860  
+                                            aten::addmm         0.66%      91.784ms         0.70%      96.254ms     223.847us           430  
+                                             aten::sub_         0.58%      79.880ms         0.58%      79.880ms       1.452us         55000  
+                                            aten::clone         0.57%      79.365ms         1.05%     144.567ms       2.628us         55000  
+                                       aten::is_nonzero         0.53%      73.313ms         0.59%      81.319ms       1.479us         55000  
+                                            aten::copy_         0.52%      72.406ms         0.52%      72.406ms       0.251us        288760  
+                                          aten::view_as         0.40%      55.113ms         0.41%      56.095ms       1.020us         55000  
+                                             aten::div_         0.39%      53.281ms         0.52%      71.703ms       1.245us         57580  
+                                            aten::lerp_         0.38%      52.589ms         0.38%      52.589ms      20.383us          2580  
+                                            aten::empty         0.28%      39.284ms         1.41%     194.929ms       1.699us        114739  
+                                           aten::detach         0.25%      34.151ms         0.32%      43.768ms       0.749us         58440  
+                                             aten::view         0.24%      33.809ms         0.24%      33.809ms       0.152us        221720  
+                                       aten::max_pool2d         0.22%      30.954ms        10.03%        1.387s       1.613ms           860  
+                                              aten::cat         0.20%      27.901ms         0.22%      30.354ms      70.591us           430  
+autograd::engine::evaluate_function: ConvolutionBack...         0.19%      25.856ms        14.44%        1.998s       2.323ms           860  
+                                             aten::item         0.16%      21.787ms         0.18%      24.409ms       0.215us        113441  
+                                         aten::addcdiv_         0.14%      19.612ms         0.14%      19.612ms       7.602us          2580  
+                                     aten::_log_softmax         0.13%      17.966ms         0.13%      17.966ms      41.781us           430  
+                                             aten::add_         0.11%      15.725ms         0.30%      41.271ms       7.998us          5160  
+     autograd::engine::evaluate_function: ReluBackward0         0.11%      14.653ms         7.87%        1.089s       1.266ms           860  
+                                         aten::addcmul_         0.10%      14.451ms         0.10%      14.451ms       5.601us          2580  
+                     Optimizer.zero_grad#Adam.zero_grad         0.09%      12.696ms         0.09%      12.696ms      29.457us           431  
+                                                 detach         0.09%      12.411ms         0.09%      12.411ms       0.212us         58440  
+                                              aten::sum         0.09%      12.369ms         0.14%      19.218ms      21.189us           907  
+                                            aten::zero_         0.09%      11.966ms         0.77%     106.820ms      82.043us          1302  
+                                           aten::argmax         0.09%      11.822ms         0.09%      12.380ms      28.791us           430  
+autograd::engine::evaluate_function: MaxPool2DWithIn...         0.08%      11.493ms         1.81%     250.842ms     291.677us           860  
+                                             aten::mul_         0.08%      11.204ms         0.17%      23.527ms       9.119us          2580  
+    autograd::engine::evaluate_function: AddmmBackward0         0.08%      10.461ms         0.98%     136.106ms     316.526us           430  
+                                         AddmmBackward0         0.07%      10.313ms         0.84%     115.837ms     269.388us           430  
+                                      aten::convolution         0.07%      10.282ms         5.27%     729.138ms     847.835us           860  
+                          MaxPool2DWithIndicesBackward0         0.07%      10.150ms         1.68%     232.627ms     270.497us           860  
+                                           aten::conv2d         0.07%       9.975ms         5.30%     732.816ms     852.112us           860  
+                                     aten::_convolution         0.07%       9.854ms         5.18%     716.397ms     833.020us           860  
+                                     phase/data_loading         0.07%       9.540ms        46.89%        6.485s      15.082ms           430  
+                                             aten::relu         0.06%       8.429ms         1.56%     215.604ms     250.702us           860  
+                                                aten::t         0.06%       8.295ms         0.12%      16.818ms       7.822us          2150  
+                        torch::autograd::AccumulateGrad         0.05%       7.417ms         0.10%      14.475ms       5.610us          2580  
+                                      aten::as_strided_         0.05%       7.156ms         0.05%       7.156ms       2.377us          3010  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  
+Self CPU time total: 13.832s

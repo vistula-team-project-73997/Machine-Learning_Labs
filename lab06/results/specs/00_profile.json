@@ -1,0 +1,6 @@
+{
+  "name": "profile",
+  "study": "profile",
+  "epochs": 1,
+  "profile": true
+}

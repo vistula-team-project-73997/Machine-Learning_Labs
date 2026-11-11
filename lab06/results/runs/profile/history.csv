@@ -1,0 +1,2 @@
+train_loss,train_accuracy,train_seconds,throughput,samples,optimizer_steps,data_loading_seconds,forward_seconds,backward_seconds,optimizer_step_seconds,epoch,lr,next_lr,validation_loss,validation_accuracy
+0.5295060545141047,0.8131636363636363,13.894907100126147,3958.2848308140665,55000,430,6.490311999572441,2.638072898844257,3.6706399985123426,1.0435124994255602,1,0.001,0.001,0.43793230895996094,0.8484

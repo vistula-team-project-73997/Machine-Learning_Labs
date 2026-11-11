@@ -1,0 +1,7 @@
+{
+  "name": "resume_interrupted",
+  "study": "resume",
+  "epochs": 6,
+  "scheduler": "StepLR",
+  "resume": true
+}

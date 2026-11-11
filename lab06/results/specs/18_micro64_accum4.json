@@ -1,0 +1,8 @@
+{
+  "name": "micro64_accum4",
+  "study": "accumulation",
+  "batch_size": 64,
+  "accumulation_steps": 4,
+  "optimizer": "SGD",
+  "epochs": 3
+}

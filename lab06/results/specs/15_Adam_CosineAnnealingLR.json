@@ -1,0 +1,7 @@
+{
+  "name": "Adam_CosineAnnealingLR",
+  "study": "optimizer",
+  "optimizer": "Adam",
+  "scheduler": "CosineAnnealingLR",
+  "epochs": 10
+}

@@ -1,0 +1,40 @@
+{
+  "name": "batch_128",
+  "study": "batch",
+  "settings": {
+    "batch_size": 128,
+    "num_workers": 0,
+    "epochs": 5,
+    "optimizer": "Adam",
+    "scheduler": "none",
+    "adam_lr": 0.001,
+    "sgd_lr": 0.01,
+    "momentum": 0.9,
+    "weight_decay": 0.0,
+    "accumulation_steps": 1,
+    "checkpoint_every": 1,
+    "name": "batch_128",
+    "study": "batch",
+    "test": true
+  },
+  "mlflow_run_id": "99b87b60685248aa9be78f1f59362208",
+  "epochs_completed": 5,
+  "final_validation_accuracy": 0.8964,
+  "final_validation_loss": 0.28676187438964845,
+  "final_test": {
+    "loss": 0.29788546409606936,
+    "accuracy": 0.8923,
+    "correct": 8923,
+    "samples": 10000
+  },
+  "throughput": 4692.47628846187,
+  "memory": {
+    "baseline_rss_mib": 348.1953125,
+    "peak_main_rss_mib": 421.35546875,
+    "peak_tree_rss_mib": 421.35546875,
+    "native_process_peak_mib": 421.421875,
+    "sampled_increment_mib": 73.16015625,
+    "memory_samples": 1992,
+    "sample_interval_seconds": 0.02
+  }
+}

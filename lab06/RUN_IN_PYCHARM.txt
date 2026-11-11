@@ -1,0 +1,29 @@
+LAB 6 - G M Robi Farhan Rojob - 73997
+
+Use the same course project:
+E:\semester 5\Lab01_GM_Robi_Farhan_Rojob_73997_submission
+
+Expand Lab01_GM_Robi_Farhan_Rojob_73997 > lab06.
+Open main.py and select the prepared run configuration Lab 6.
+The tested interpreter is Python 3.11.8:
+C:\Users\rojob\Documents\ChatGPT\Machine Learning\.venv-lab2\Scripts\python.exe
+
+The supplied measurements are complete. You can read report.md and
+lab6 explanation.pdf immediately, and open results/experiment_dashboard.html.
+The proposal is the separate one-page project_proposal.pdf.
+
+Running main.py reruns the full assignment: 119 epochs across the required
+studies, plus profiler post-processing and worker startup. Allow substantial
+time. Progress prints each epoch; results are saved relative to lab06.
+Use main.py --continue-studies to skip already completed experiments.
+No training subset is used. Fashion-MNIST is already under the course data/.
+
+To verify saved evidence without retraining:
+& 'C:\Users\rojob\Documents\ChatGPT\Machine Learning\.venv-lab2\Scripts\python.exe' lab06/src/verify_results.py
+
+Do not run an earlier lab's main.py by mistake. Read config.yaml before
+changing settings. The Windows multiprocessing main guard is required.
+CPU memory numbers are process working-set/RSS measurements, not GPU RAM.
+
+The proposal still requires instructor approval. Review and understand the
+work and the prescribed reading. Nothing is sent to the instructor by these scripts.

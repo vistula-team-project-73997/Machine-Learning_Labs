@@ -1,0 +1,34 @@
+{
+  "name": "SGD_StepLR",
+  "study": "optimizer",
+  "settings": {
+    "batch_size": 128,
+    "num_workers": 0,
+    "epochs": 10,
+    "optimizer": "SGD",
+    "scheduler": "StepLR",
+    "adam_lr": 0.001,
+    "sgd_lr": 0.01,
+    "momentum": 0.9,
+    "weight_decay": 0.0,
+    "accumulation_steps": 1,
+    "checkpoint_every": 1,
+    "name": "SGD_StepLR",
+    "study": "optimizer"
+  },
+  "mlflow_run_id": "19e0ae5527504dcb942267ade7e9616a",
+  "epochs_completed": 10,
+  "final_validation_accuracy": 0.9034,
+  "final_validation_loss": 0.2756411956787109,
+  "final_test": null,
+  "throughput": 3525.3510926339213,
+  "memory": {
+    "baseline_rss_mib": 348.96484375,
+    "peak_main_rss_mib": 418.0859375,
+    "peak_tree_rss_mib": 418.0859375,
+    "native_process_peak_mib": 418.15234375,
+    "sampled_increment_mib": 69.12109375,
+    "memory_samples": 5199,
+    "sample_interval_seconds": 0.02
+  }
+}

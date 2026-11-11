@@ -1,0 +1,35 @@
+{
+  "name": "resume_interrupted",
+  "study": "resume",
+  "settings": {
+    "batch_size": 128,
+    "num_workers": 0,
+    "epochs": 6,
+    "optimizer": "Adam",
+    "scheduler": "StepLR",
+    "adam_lr": 0.001,
+    "sgd_lr": 0.01,
+    "momentum": 0.9,
+    "weight_decay": 0.0,
+    "accumulation_steps": 1,
+    "checkpoint_every": 1,
+    "name": "resume_interrupted",
+    "study": "resume",
+    "resume": true
+  },
+  "mlflow_run_id": "75ec56aef3c8412b84ff2d5ad73ce797",
+  "epochs_completed": 6,
+  "final_validation_accuracy": 0.9006,
+  "final_validation_loss": 0.2784681121826172,
+  "final_test": null,
+  "throughput": 1590.7513186178155,
+  "memory": {
+    "baseline_rss_mib": 347.58984375,
+    "peak_main_rss_mib": 420.34765625,
+    "peak_tree_rss_mib": 420.34765625,
+    "native_process_peak_mib": 420.4140625,
+    "sampled_increment_mib": 72.7578125,
+    "memory_samples": 3197,
+    "sample_interval_seconds": 0.02
+  }
+}

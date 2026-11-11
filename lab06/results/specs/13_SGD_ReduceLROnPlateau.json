@@ -1,0 +1,7 @@
+{
+  "name": "SGD_ReduceLROnPlateau",
+  "study": "optimizer",
+  "optimizer": "SGD",
+  "scheduler": "ReduceLROnPlateau",
+  "epochs": 10
+}

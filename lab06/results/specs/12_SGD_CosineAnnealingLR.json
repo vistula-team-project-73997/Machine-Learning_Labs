@@ -1,0 +1,7 @@
+{
+  "name": "SGD_CosineAnnealingLR",
+  "study": "optimizer",
+  "optimizer": "SGD",
+  "scheduler": "CosineAnnealingLR",
+  "epochs": 10
+}

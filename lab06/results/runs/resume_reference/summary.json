@@ -1,0 +1,34 @@
+{
+  "name": "resume_reference",
+  "study": "resume",
+  "settings": {
+    "batch_size": 128,
+    "num_workers": 0,
+    "epochs": 6,
+    "optimizer": "Adam",
+    "scheduler": "StepLR",
+    "adam_lr": 0.001,
+    "sgd_lr": 0.01,
+    "momentum": 0.9,
+    "weight_decay": 0.0,
+    "accumulation_steps": 1,
+    "checkpoint_every": 1,
+    "name": "resume_reference",
+    "study": "resume"
+  },
+  "mlflow_run_id": "1683d359640547c18432932fa58f3f39",
+  "epochs_completed": 6,
+  "final_validation_accuracy": 0.9006,
+  "final_validation_loss": 0.2784681121826172,
+  "final_test": null,
+  "throughput": 1971.3687047502328,
+  "memory": {
+    "baseline_rss_mib": 348.85546875,
+    "peak_main_rss_mib": 421.76953125,
+    "peak_tree_rss_mib": 421.76953125,
+    "native_process_peak_mib": 421.8359375,
+    "sampled_increment_mib": 72.9140625,
+    "memory_samples": 5562,
+    "sample_interval_seconds": 0.02
+  }
+}

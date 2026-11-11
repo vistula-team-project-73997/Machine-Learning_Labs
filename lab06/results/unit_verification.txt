@@ -1,0 +1,8 @@
+test_lab3_architecture (__main__.PipelineTests.test_lab3_architecture) ... ok
+test_partial_accumulation_matches_full_batch (__main__.PipelineTests.test_partial_accumulation_matches_full_batch) ... ok
+test_restore_recovers_next_update_scheduler_rng_and_shuffle (__main__.PipelineTests.test_restore_recovers_next_update_scheduler_rng_and_shuffle) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.173s
+
+OK

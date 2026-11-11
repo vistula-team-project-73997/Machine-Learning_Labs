@@ -1,0 +1,7 @@
+{
+  "name": "Adam_ReduceLROnPlateau",
+  "study": "optimizer",
+  "optimizer": "Adam",
+  "scheduler": "ReduceLROnPlateau",
+  "epochs": 10
+}

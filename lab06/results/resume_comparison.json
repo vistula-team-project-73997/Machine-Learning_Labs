@@ -1,0 +1,19 @@
+{
+  "interrupted_after_epoch": 3,
+  "resumed_epochs": [
+    4,
+    5,
+    6
+  ],
+  "final_epoch": 6,
+  "max_parameter_difference": 0.0,
+  "curve_max_differences": {
+    "train_loss": 0.0,
+    "train_accuracy": 0.0,
+    "validation_loss": 0.0,
+    "validation_accuracy": 0.0,
+    "lr": 0.0,
+    "next_lr": 0.0
+  },
+  "exact_match": true
+}

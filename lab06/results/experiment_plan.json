@@ -1,0 +1,150 @@
+[
+  {
+    "name": "profile",
+    "study": "profile",
+    "epochs": 1,
+    "profile": true
+  },
+  {
+    "name": "workers_0",
+    "study": "workers",
+    "num_workers": 0,
+    "epochs": 3
+  },
+  {
+    "name": "workers_1",
+    "study": "workers",
+    "num_workers": 1,
+    "epochs": 3
+  },
+  {
+    "name": "workers_2",
+    "study": "workers",
+    "num_workers": 2,
+    "epochs": 3
+  },
+  {
+    "name": "workers_4",
+    "study": "workers",
+    "num_workers": 4,
+    "epochs": 3
+  },
+  {
+    "name": "workers_8",
+    "study": "workers",
+    "num_workers": 8,
+    "epochs": 3
+  },
+  {
+    "name": "batch_32",
+    "study": "batch",
+    "batch_size": 32,
+    "epochs": 5,
+    "test": true
+  },
+  {
+    "name": "batch_64",
+    "study": "batch",
+    "batch_size": 64,
+    "epochs": 5,
+    "test": true
+  },
+  {
+    "name": "batch_128",
+    "study": "batch",
+    "batch_size": 128,
+    "epochs": 5,
+    "test": true
+  },
+  {
+    "name": "batch_256",
+    "study": "batch",
+    "batch_size": 256,
+    "epochs": 5,
+    "test": true
+  },
+  {
+    "name": "batch_512",
+    "study": "batch",
+    "batch_size": 512,
+    "epochs": 5,
+    "test": true
+  },
+  {
+    "name": "SGD_StepLR",
+    "study": "optimizer",
+    "optimizer": "SGD",
+    "scheduler": "StepLR",
+    "epochs": 10
+  },
+  {
+    "name": "SGD_CosineAnnealingLR",
+    "study": "optimizer",
+    "optimizer": "SGD",
+    "scheduler": "CosineAnnealingLR",
+    "epochs": 10
+  },
+  {
+    "name": "SGD_ReduceLROnPlateau",
+    "study": "optimizer",
+    "optimizer": "SGD",
+    "scheduler": "ReduceLROnPlateau",
+    "epochs": 10
+  },
+  {
+    "name": "Adam_StepLR",
+    "study": "optimizer",
+    "optimizer": "Adam",
+    "scheduler": "StepLR",
+    "epochs": 10
+  },
+  {
+    "name": "Adam_CosineAnnealingLR",
+    "study": "optimizer",
+    "optimizer": "Adam",
+    "scheduler": "CosineAnnealingLR",
+    "epochs": 10
+  },
+  {
+    "name": "Adam_ReduceLROnPlateau",
+    "study": "optimizer",
+    "optimizer": "Adam",
+    "scheduler": "ReduceLROnPlateau",
+    "epochs": 10
+  },
+  {
+    "name": "effective256",
+    "study": "accumulation",
+    "batch_size": 256,
+    "optimizer": "SGD",
+    "epochs": 3
+  },
+  {
+    "name": "micro64_accum4",
+    "study": "accumulation",
+    "batch_size": 64,
+    "accumulation_steps": 4,
+    "optimizer": "SGD",
+    "epochs": 3
+  },
+  {
+    "name": "resume_reference",
+    "study": "resume",
+    "epochs": 6,
+    "scheduler": "StepLR"
+  },
+  {
+    "name": "resume_interrupted",
+    "study": "resume",
+    "epochs": 6,
+    "scheduler": "StepLR",
+    "interrupt_after": 3
+  },
+  {
+    "name": "resume_interrupted",
+    "study": "resume",
+    "epochs": 6,
+    "scheduler": "StepLR",
+    "resume": true
+  }
+]

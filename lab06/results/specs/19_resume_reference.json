@@ -1,0 +1,6 @@
+{
+  "name": "resume_reference",
+  "study": "resume",
+  "epochs": 6,
+  "scheduler": "StepLR"
+}

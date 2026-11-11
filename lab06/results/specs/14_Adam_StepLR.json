@@ -1,0 +1,7 @@
+{
+  "name": "Adam_StepLR",
+  "study": "optimizer",
+  "optimizer": "Adam",
+  "scheduler": "StepLR",
+  "epochs": 10
+}

@@ -1,0 +1,34 @@
+{
+  "name": "micro64_accum4",
+  "study": "accumulation",
+  "settings": {
+    "batch_size": 64,
+    "num_workers": 0,
+    "epochs": 3,
+    "optimizer": "SGD",
+    "scheduler": "none",
+    "adam_lr": 0.001,
+    "sgd_lr": 0.01,
+    "momentum": 0.9,
+    "weight_decay": 0.0,
+    "accumulation_steps": 4,
+    "checkpoint_every": 1,
+    "name": "micro64_accum4",
+    "study": "accumulation"
+  },
+  "mlflow_run_id": "6f4b487cadea48d8bcc61470892315cf",
+  "epochs_completed": 3,
+  "final_validation_accuracy": 0.8644,
+  "final_validation_loss": 0.3945100891113281,
+  "final_test": null,
+  "throughput": 2414.1110567612704,
+  "memory": {
+    "baseline_rss_mib": 348.35546875,
+    "peak_main_rss_mib": 417.73828125,
+    "peak_tree_rss_mib": 417.73828125,
+    "native_process_peak_mib": 417.8046875,
+    "sampled_increment_mib": 69.3828125,
+    "memory_samples": 2269,
+    "sample_interval_seconds": 0.02
+  }
+}

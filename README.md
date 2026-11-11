@@ -73,3 +73,26 @@ The maximum numerical-gradient error is 1.623e-10 and the engine matches
 PyTorch on the required expression. Five correctness tests and saved-artifact
 verification pass. This is AI-assisted preparation; understand the code,
 review your prescribed reading and follow the opening classroom instructions.
+
+## Lab 6
+
+Lab 6 restructures the best Lab 3 CNN into a single YAML-driven training
+pipeline with genuine local MLflow logs, checkpoints and full-epoch PyTorch
+profiling. It measures workers 0/1/2/4/8, batches 32/64/128/256/512 over five
+epochs, and all six SGD+momentum/Adam and scheduler pairs over ten epochs.
+Gradient accumulation and a real epoch-three process interruption/restart
+are independently checked against their reference runs.
+
+Open lab06/main.py and select the Lab 6 PyCharm configuration. The existing
+Python 3.11.8 environment now includes mlflow-skinny 2.14.1 and psutil 5.9.8
+for genuine tracking and CPU memory measurements. See lab06/RUN_IN_PYCHARM.txt.
+All 21 completed MLflow runs and 119 training epochs have measured evidence.
+
+Read lab06/report.md, lab06/study_guide.md and lab06/lab6 explanation.pdf.
+Open lab06/results/experiment_dashboard.html for the offline experiment view.
+The one-page lab06/project_proposal.pdf covers a compact INT8 clothing-image
+classifier with <=50 ms p95 CPU latency and <=5 MB artifact targets. These
+are proposed constraints; instructor approval remains pending.
+
+This is AI-assisted preparation. The recorded verification passes, the earlier
+labs are preserved, and no work has been sent or published externally.

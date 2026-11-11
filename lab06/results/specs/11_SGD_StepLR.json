@@ -1,0 +1,7 @@
+{
+  "name": "SGD_StepLR",
+  "study": "optimizer",
+  "optimizer": "SGD",
+  "scheduler": "StepLR",
+  "epochs": 10
+}

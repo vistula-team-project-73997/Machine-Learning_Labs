@@ -1,0 +1,7 @@
+{
+  "name": "batch_32",
+  "study": "batch",
+  "batch_size": 32,
+  "epochs": 5,
+  "test": true
+}

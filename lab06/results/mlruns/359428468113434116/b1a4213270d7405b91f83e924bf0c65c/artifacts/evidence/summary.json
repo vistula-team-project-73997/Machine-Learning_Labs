@@ -1,0 +1,34 @@
+{
+  "name": "workers_4",
+  "study": "workers",
+  "settings": {
+    "batch_size": 128,
+    "num_workers": 4,
+    "epochs": 3,
+    "optimizer": "Adam",
+    "scheduler": "none",
+    "adam_lr": 0.001,
+    "sgd_lr": 0.01,
+    "momentum": 0.9,
+    "weight_decay": 0.0,
+    "accumulation_steps": 1,
+    "checkpoint_every": 1,
+    "name": "workers_4",
+    "study": "workers"
+  },
+  "mlflow_run_id": "b1a4213270d7405b91f83e924bf0c65c",
+  "epochs_completed": 3,
+  "final_validation_accuracy": 0.8854,
+  "final_validation_loss": 0.32544127044677734,
+  "final_test": null,
+  "throughput": 3324.3061229955997,
+  "memory": {
+    "baseline_rss_mib": 349.51171875,
+    "peak_main_rss_mib": 423.15625,
+    "peak_tree_rss_mib": 1776.09375,
+    "native_process_peak_mib": 423.2265625,
+    "sampled_increment_mib": 73.64453125,
+    "memory_samples": 1675,
+    "sample_interval_seconds": 0.02
+  }
+}

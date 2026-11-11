@@ -1,0 +1,85 @@
+{
+  "manual_source": "C:/Users/rojob/Downloads/Lab Manual_ Labs 06.pdf",
+  "manual_printed_page": 8,
+  "manual_sha256": "7618a9858fb540f0b32cd105c9a20a558c3bc6fc7747b5fe910fe68090ea7983",
+  "textbook_source": "E:\\introduction-to-machine-learning-systems_compress.pdf",
+  "textbook_sha256": "364ed2c2f3c620cf4202eb8ec77f37bda21e10cff7e37f59815fef81af3e6c9a",
+  "textbook_edition": "July 31, 2025",
+  "printed_to_viewer_offset": 52,
+  "reading": {
+    "5.5": {
+      "printed": [
+        215,
+        218
+      ],
+      "viewer": [
+        267,
+        270
+      ]
+    },
+    "8.2": {
+      "printed": [
+        387,
+        391
+      ],
+      "viewer": [
+        439,
+        443
+      ]
+    },
+    "8.3.2": {
+      "printed": [
+        399,
+        405
+      ],
+      "viewer": [
+        451,
+        457
+      ]
+    },
+    "8.4": {
+      "printed": [
+        408,
+        422
+      ],
+      "viewer": [
+        460,
+        474
+      ]
+    },
+    "8.5": {
+      "printed": [
+        422,
+        439
+      ],
+      "viewer": [
+        474,
+        491
+      ]
+    },
+    "8.7": {
+      "printed": [
+        457,
+        460
+      ],
+      "viewer": [
+        509,
+        512
+      ]
+    },
+    "13.3": {
+      "printed": [
+        859,
+        875
+      ],
+      "viewer": [
+        911,
+        927
+      ]
+    }
+  },
+  "best_lab3_model": "CNN",
+  "selection_basis": "Highest Lab 3 validation accuracy (0.896); also highest test accuracy (0.8917)",
+  "architecture": "Unchanged Lab 3 CNN, initialized afresh for independent studies",
+  "note": "Preparation only; instructor proposal approval and submission are not claimed."
+}

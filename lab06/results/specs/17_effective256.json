@@ -1,0 +1,7 @@
+{
+  "name": "effective256",
+  "study": "accumulation",
+  "batch_size": 256,
+  "optimizer": "SGD",
+  "epochs": 3
+}

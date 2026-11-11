@@ -1,0 +1,34 @@
+{
+  "name": "SGD_ReduceLROnPlateau",
+  "study": "optimizer",
+  "settings": {
+    "batch_size": 128,
+    "num_workers": 0,
+    "epochs": 10,
+    "optimizer": "SGD",
+    "scheduler": "ReduceLROnPlateau",
+    "adam_lr": 0.001,
+    "sgd_lr": 0.01,
+    "momentum": 0.9,
+    "weight_decay": 0.0,
+    "accumulation_steps": 1,
+    "checkpoint_every": 1,
+    "name": "SGD_ReduceLROnPlateau",
+    "study": "optimizer"
+  },
+  "mlflow_run_id": "46bc5e48115f4664a7b436e53204727b",
+  "epochs_completed": 10,
+  "final_validation_accuracy": 0.9016,
+  "final_validation_loss": 0.26996046600341794,
+  "final_test": null,
+  "throughput": 4660.060906052862,
+  "memory": {
+    "baseline_rss_mib": 348.25,
+    "peak_main_rss_mib": 417.96875,
+    "peak_tree_rss_mib": 417.96875,
+    "native_process_peak_mib": 418.03515625,
+    "sampled_increment_mib": 69.71875,
+    "memory_samples": 3929,
+    "sample_interval_seconds": 0.02
+  }
+}

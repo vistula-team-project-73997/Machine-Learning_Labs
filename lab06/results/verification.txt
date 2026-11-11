@@ -1,0 +1,24 @@
+PASS Adam_CosineAnnealingLR: 10 epochs, MLflow params/metrics/artifacts and checkpoint
+PASS Adam_ReduceLROnPlateau: 10 epochs, MLflow params/metrics/artifacts and checkpoint
+PASS Adam_StepLR: 10 epochs, MLflow params/metrics/artifacts and checkpoint
+PASS SGD_CosineAnnealingLR: 10 epochs, MLflow params/metrics/artifacts and checkpoint
+PASS SGD_ReduceLROnPlateau: 10 epochs, MLflow params/metrics/artifacts and checkpoint
+PASS SGD_StepLR: 10 epochs, MLflow params/metrics/artifacts and checkpoint
+PASS batch_128: 5 epochs, MLflow params/metrics/artifacts and checkpoint
+PASS batch_256: 5 epochs, MLflow params/metrics/artifacts and checkpoint
+PASS batch_32: 5 epochs, MLflow params/metrics/artifacts and checkpoint
+PASS batch_512: 5 epochs, MLflow params/metrics/artifacts and checkpoint
+PASS batch_64: 5 epochs, MLflow params/metrics/artifacts and checkpoint
+PASS effective256: 3 epochs, MLflow params/metrics/artifacts and checkpoint
+PASS micro64_accum4: 3 epochs, MLflow params/metrics/artifacts and checkpoint
+PASS profile: 1 epochs, MLflow params/metrics/artifacts and checkpoint
+PASS resume_interrupted: 6 epochs, MLflow params/metrics/artifacts and checkpoint
+PASS resume_reference: 6 epochs, MLflow params/metrics/artifacts and checkpoint
+PASS workers_0: 3 epochs, MLflow params/metrics/artifacts and checkpoint
+PASS workers_1: 3 epochs, MLflow params/metrics/artifacts and checkpoint
+PASS workers_2: 3 epochs, MLflow params/metrics/artifacts and checkpoint
+PASS workers_4: 3 epochs, MLflow params/metrics/artifacts and checkpoint
+PASS workers_8: 3 epochs, MLflow params/metrics/artifacts and checkpoint
+PASS all 21 experiment runs / 119 epoch records; full Lab 3 split preserved.
+PASS actual process restart: model, optimizer, scheduler and all RNG states match exactly.
+PASS accumulation behavior, profile shares, required grids and fresh checkpoint test evaluation.

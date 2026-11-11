@@ -1,0 +1,15 @@
+artifact_uri: file:///E:/semester%205/Lab01_GM_Robi_Farhan_Rojob_73997_submission/Lab01_GM_Robi_Farhan_Rojob_73997/lab06/results/mlruns/359428468113434116/aa0b612107954215a082c2611f79c8f2/artifacts
+end_time: 1794330967951
+entry_point_name: ''
+experiment_id: '359428468113434116'
+lifecycle_stage: active
+run_id: aa0b612107954215a082c2611f79c8f2
+run_name: profile
+run_uuid: aa0b612107954215a082c2611f79c8f2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1794330611107
+status: 3
+tags: []
+user_id: rojob

@@ -1,0 +1,34 @@
+{
+  "name": "SGD_CosineAnnealingLR",
+  "study": "optimizer",
+  "settings": {
+    "batch_size": 128,
+    "num_workers": 0,
+    "epochs": 10,
+    "optimizer": "SGD",
+    "scheduler": "CosineAnnealingLR",
+    "adam_lr": 0.001,
+    "sgd_lr": 0.01,
+    "momentum": 0.9,
+    "weight_decay": 0.0,
+    "accumulation_steps": 1,
+    "checkpoint_every": 1,
+    "name": "SGD_CosineAnnealingLR",
+    "study": "optimizer"
+  },
+  "mlflow_run_id": "e973c93a5f694a168cffd98312e6b748",
+  "epochs_completed": 10,
+  "final_validation_accuracy": 0.9054,
+  "final_validation_loss": 0.2733356185913086,
+  "final_test": null,
+  "throughput": 4726.425507130417,
+  "memory": {
+    "baseline_rss_mib": 348.859375,
+    "peak_main_rss_mib": 417.26171875,
+    "peak_tree_rss_mib": 417.26171875,
+    "native_process_peak_mib": 417.328125,
+    "sampled_increment_mib": 68.40234375,
+    "memory_samples": 3874,
+    "sample_interval_seconds": 0.02
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "workers_8",
+  "study": "workers",
+  "num_workers": 8,
+  "epochs": 3
+}
