@@ -1,0 +1,4 @@
+PASS exact global/layerwise masks, deterministic ties, fixed zeros after Adam updates
+PASS physically sliced convolutions and classifier match dense masked reference
+PASS literal KL(student||teacher), finite-difference gradient, detached teacher
+PASS exact CSR round trip including convolution reshaping and biases

@@ -1,0 +1,110 @@
+[
+  {
+    "name": "teacher",
+    "method": "baseline",
+    "target": 0.0,
+    "epochs": 10
+  },
+  {
+    "name": "global_0",
+    "method": "global",
+    "target": 0,
+    "epochs": 3
+  },
+  {
+    "name": "global_0.25",
+    "method": "global",
+    "target": 0.25,
+    "epochs": 3
+  },
+  {
+    "name": "global_0.5",
+    "method": "global",
+    "target": 0.5,
+    "epochs": 3
+  },
+  {
+    "name": "global_0.75",
+    "method": "global",
+    "target": 0.75,
+    "epochs": 3
+  },
+  {
+    "name": "global_0.9",
+    "method": "global",
+    "target": 0.9,
+    "epochs": 3
+  },
+  {
+    "name": "global_0.95",
+    "method": "global",
+    "target": 0.95,
+    "epochs": 3
+  },
+  {
+    "name": "layerwise_0",
+    "method": "layerwise",
+    "target": 0,
+    "epochs": 3
+  },
+  {
+    "name": "layerwise_0.25",
+    "method": "layerwise",
+    "target": 0.25,
+    "epochs": 3
+  },
+  {
+    "name": "layerwise_0.5",
+    "method": "layerwise",
+    "target": 0.5,
+    "epochs": 3
+  },
+  {
+    "name": "layerwise_0.75",
+    "method": "layerwise",
+    "target": 0.75,
+    "epochs": 3
+  },
+  {
+    "name": "layerwise_0.9",
+    "method": "layerwise",
+    "target": 0.9,
+    "epochs": 3
+  },
+  {
+    "name": "layerwise_0.95",
+    "method": "layerwise",
+    "target": 0.95,
+    "epochs": 3
+  },
+  {
+    "name": "structured_0.1",
+    "method": "structured",
+    "target": 0.1,
+    "epochs": 3
+  },
+  {
+    "name": "structured_0.25",
+    "method": "structured",
+    "target": 0.25,
+    "epochs": 3
+  },
+  {
+    "name": "structured_0.5",
+    "method": "structured",
+    "target": 0.5,
+    "epochs": 3
+  },
+  {
+    "name": "student_plain",
+    "method": "plain",
+    "target": 0.0,
+    "epochs": 10
+  },
+  {
+    "name": "student_distilled",
+    "method": "distilled",
+    "target": 0.0,
+    "epochs": 10
+  }
+]

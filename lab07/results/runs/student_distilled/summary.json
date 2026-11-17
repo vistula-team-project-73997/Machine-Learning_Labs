@@ -1,0 +1,32 @@
+{
+  "name": "student_distilled",
+  "method": "distilled",
+  "target": 0.0,
+  "epochs": 10,
+  "arch": [
+    8,
+    16,
+    128
+  ],
+  "fingerprint": "0773ecdd39fe49ba78f92fc7c585cc30a19b13b22c1810c9b5636cc0ca11e304",
+  "initial_sha256": "2ffee61e2820341d107c0d0ca399c58ba612be4de4742b3c60c572b7f85afa5a",
+  "parameters": 103018,
+  "nonzero_parameters": 103018,
+  "weight_count": 102856,
+  "zero_weights": 0,
+  "actual_weight_sparsity": 0.0,
+  "pre_validation_accuracy": 0.0228,
+  "validation_accuracy": 0.8958,
+  "test_accuracy": 0.8952,
+  "test_correct": 8952,
+  "test_samples": 10000,
+  "train_seconds": 68.79101179994177,
+  "train_validation_wall_seconds": 70.57770630001323,
+  "dense_mac": 383872,
+  "potential_nonzero_mac": 383872,
+  "estimated_dense_flops": 767744,
+  "checkpoint_sha256": "a335da5729920e6fe4e501ce71734d3b9792aa34026f11216ac23d7e30795431",
+  "dense_npz_bytes": 414110,
+  "csr_npz_bytes": 829606,
+  "checkpoint_bytes": 414824
+}

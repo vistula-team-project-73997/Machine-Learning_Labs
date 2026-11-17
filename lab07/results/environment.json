@@ -1,0 +1,85 @@
+{
+  "python": "3.11.8 (main, Feb 25 2024, 03:41:44) [MSC v.1929 64 bit (AMD64)]",
+  "executable": "C:\\Users\\rojob\\Documents\\ChatGPT\\Machine Learning\\.venv-lab2\\Scripts\\python.exe",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 197 Stepping 2, GenuineIntel",
+  "logical_cpus": 16,
+  "threads": 4,
+  "interop_threads": 1,
+  "cuda": false,
+  "packages": {
+    "torch": "2.3.1",
+    "torchvision": "0.18.1",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "matplotlib": "3.9.0"
+  },
+  "energy": "Not measured: fixed-power scenarios only",
+  "fingerprint": "0773ecdd39fe49ba78f92fc7c585cc30a19b13b22c1810c9b5636cc0ca11e304",
+  "provenance": {
+    "config": {
+      "seed": 42,
+      "threads": 4,
+      "dataset_root": "../data",
+      "download": false,
+      "train_size": 55000,
+      "validation_size": 5000,
+      "mean": 0.286,
+      "std": 0.353,
+      "batch_size": 128,
+      "teacher_arch": [
+        16,
+        32,
+        640
+      ],
+      "student_arch": [
+        8,
+        16,
+        128
+      ],
+      "teacher_epochs": 10,
+      "student_epochs": 10,
+      "finetune_epochs": 3,
+      "learning_rate": 0.001,
+      "finetune_learning_rate": 0.0001,
+      "sparsities": [
+        0,
+        0.25,
+        0.5,
+        0.75,
+        0.9,
+        0.95
+      ],
+      "filter_removal": [
+        0.1,
+        0.25,
+        0.5
+      ],
+      "temperature": 4,
+      "alpha": 0.5,
+      "kl_direction": "student||teacher",
+      "benchmark": {
+        "batches": [
+          1,
+          128
+        ],
+        "blocks": 5,
+        "warmup": 30,
+        "repeats": [
+          100,
+          20
+        ]
+      },
+      "energy_scenario_watts": [
+        15,
+        35,
+        65
+      ]
+    },
+    "source": {
+      "models.py": "34fe818e38875edbfbfecd9438824fa36e74e71a6fdd7a223fdffc5b3bf5ccbf",
+      "run_lab.py": "c7f4e5d3ab818c2b68129cc1b473f30dedf973e53d560b46a83dbda9e996f978",
+      "storage.py": "66d82269f9a1b6d9ef27b91e78ba30eb026db2ddd232ea665e0d33a51e6538b0"
+    }
+  }
+}

@@ -96,3 +96,23 @@ are proposed constraints; instructor approval remains pending.
 
 This is AI-assisted preparation. The recorded verification passes, the earlier
 labs are preserved, and no work has been sent or published externally.
+
+## Lab 7: Compression - pruning and distillation
+
+Lab 7 adds an oversized 1,015,370-parameter Fashion-MNIST CNN, global and
+layer-wise magnitude pruning at six sparsities, physical L2 filter pruning,
+and plain/distilled 103,018-parameter students. All 18 experiments and 75
+full-data epochs have saved evidence. Every pruning model fine-tunes for
+three epochs with its specified structure/mask preserved.
+
+Open lab07/main.py and select the Lab 7 PyCharm configuration with the same
+tested Python 3.11.8 interpreter. Complete matching experiments are skipped;
+final CPU latency is refreshed. Read lab07/report.md, lab07/study_guide.md and
+lab07/lab7 explanation.pdf. Open lab07/results/experiment_dashboard.html for
+the offline sortable comparison. Run lab07/src/verify_results.py to verify
+saved evidence without retraining.
+
+The comparison distinguishes dense execution from sparse disk storage and
+physical shape reduction. It follows the manual's literal KL(student ||
+teacher) at T=4 and alpha=0.5. Energy is reported as fixed-power estimates,
+not measurements. AI-assisted preparation; review before submission.

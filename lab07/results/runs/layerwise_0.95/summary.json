@@ -1,0 +1,33 @@
+{
+  "name": "layerwise_0.95",
+  "method": "layerwise",
+  "target": 0.95,
+  "epochs": 3,
+  "arch": [
+    16,
+    32,
+    640
+  ],
+  "fingerprint": "0773ecdd39fe49ba78f92fc7c585cc30a19b13b22c1810c9b5636cc0ca11e304",
+  "initial_sha256": "b5dcaf78c688d65d25e6386dc2b170b2aead60354fe9d489d0f1591a5236fc57",
+  "parameters": 1015370,
+  "nonzero_parameters": 51431,
+  "weight_count": 1014672,
+  "zero_weights": 963939,
+  "actual_weight_sparsity": 0.9500005913240929,
+  "pre_validation_accuracy": 0.2132,
+  "validation_accuracy": 0.7772,
+  "test_accuracy": 0.7742,
+  "test_correct": 7742,
+  "test_samples": 10000,
+  "train_seconds": 42.78101819998119,
+  "train_validation_wall_seconds": 43.81109589996049,
+  "dense_mac": 2025984,
+  "potential_nonzero_mac": 101064,
+  "estimated_dense_flops": 4051968,
+  "checkpoint_sha256": "14e576fcf2ce7dc4309883654cf854f155533e9c37822fb4f31e42e6613c8bf0",
+  "dense_npz_bytes": 4063518,
+  "csr_npz_bytes": 416910,
+  "checkpoint_bytes": 4064168,
+  "teacher_checkpoint_sha256": "89a7736f5866f98fdae74f06e505a7ab23cf484f2d2317288900dbd3c09b71f4"
+}

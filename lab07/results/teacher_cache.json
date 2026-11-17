@@ -1,0 +1,7 @@
+{
+  "seconds": 4.273797100002412,
+  "samples": 55000,
+  "bytes": 2200000,
+  "teacher_checkpoint_sha256": "89a7736f5866f98fdae74f06e505a7ab23cf484f2d2317288900dbd3c09b71f4",
+  "note": "Frozen teacher logits for training split only; extra preparation cost, excluded from student epoch times."
+}

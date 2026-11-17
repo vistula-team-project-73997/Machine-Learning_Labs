@@ -1,0 +1,74 @@
+{
+  "manual_source": "C:/Users/rojob/Downloads/Lab Manual_ Labs 07.pdf",
+  "manual_sha256": "aebb38692d0253b549da10f1d058476ba2d0528dc1bde703b7980dc8f2f18f04",
+  "manual_printed_page": 9,
+  "textbook_source": "E:\\introduction-to-machine-learning-systems_compress.pdf",
+  "textbook_sha256": "364ed2c2f3c620cf4202eb8ec77f37bda21e10cff7e37f59815fef81af3e6c9a",
+  "textbook_edition": "July 31, 2025",
+  "printed_to_viewer_offset": 52,
+  "reading": {
+    "Chapter 9": {
+      "printed": [
+        479,
+        540
+      ],
+      "viewer": [
+        531,
+        592
+      ]
+    },
+    "10.3": {
+      "printed": [
+        547,
+        550
+      ],
+      "viewer": [
+        599,
+        602
+      ]
+    },
+    "10.4": {
+      "printed": [
+        550,
+        584
+      ],
+      "viewer": [
+        602,
+        636
+      ]
+    },
+    "10.4.1": {
+      "printed": [
+        551,
+        565
+      ],
+      "viewer": [
+        603,
+        617
+      ]
+    },
+    "10.4.2": {
+      "printed": [
+        565,
+        571
+      ],
+      "viewer": [
+        617,
+        623
+      ]
+    }
+  },
+  "edition_notes": [
+    "10.4 is called Model Representation Optimization in this edition.",
+    "Textbook section 9.3 names algorithmic, compute and data efficiency; lab table explicitly separates energy.",
+    "The manual specifies student||teacher KL; literal direction is implemented and explained.",
+    "Manual task marks total 115; no normalization of marks is assumed."
+  ],
+  "api_sources": [
+    "https://docs.pytorch.org/tutorials/intermediate/pruning_tutorial.html",
+    "https://docs.pytorch.org/docs/2.15/generated/torch.nn.KLDivLoss.html",
+    "https://docs.pytorch.org/docs/2.3/benchmark_utils.html",
+    "https://docs.pytorch.org/vision/0.18/generated/torchvision.datasets.FashionMNIST.html"
+  ],
+  "note": "AI-assisted preparation; no external submission claimed."
+}

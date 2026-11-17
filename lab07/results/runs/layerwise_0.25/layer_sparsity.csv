@@ -1,0 +1,5 @@
+layer,weights,zeros,sparsity
+conv1.weight,144,36,0.25
+conv2.weight,4608,1152,0.25
+fc1.weight,1003520,250880,0.25
+fc2.weight,6400,1600,0.25

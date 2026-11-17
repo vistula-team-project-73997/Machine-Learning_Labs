@@ -1,0 +1,29 @@
+LAB 7 - G M Robi Farhan Rojob - 73997
+
+Use the same PyCharm course project as Labs 1-6.
+Expand Lab01_GM_Robi_Farhan_Rojob_73997 > lab07.
+Open main.py and select the Lab 7 run configuration.
+
+Tested interpreter: Python 3.11.8
+C:\Users\rojob\Documents\ChatGPT\Machine Learning\.venv-lab2\Scripts\python.exe
+
+The full suite uses 55,000 training, 5,000 validation and 10,000 test images.
+It completes 18 experiments and 75 epochs. Allow substantial time for a
+fresh run. Progress is printed every epoch. Existing matching complete
+experiments are skipped; final timing is refreshed. --rerun trains all again.
+
+Read report.md, study_guide.md and lab7 explanation.pdf immediately.
+Open results/experiment_dashboard.html for the offline sortable results.
+The submission ZIP contains source, evidence, models, figures and manual.
+
+Verify saved evidence without retraining:
+Run src/verify_results.py with the same interpreter.
+Run src/test_compression.py for the small independent correctness checks.
+
+Before changing anything, read config.json. On a different machine, set
+download to true to let torchvision obtain Fashion-MNIST. The default root
+is ../data relative to lab07, independent of PyCharm's working directory.
+
+Energy figures are assumptions-based estimates, not power measurements.
+The manual writes KL(student || teacher); the implementation follows it.
+Review the lab and practise explaining the measured trade-offs.
