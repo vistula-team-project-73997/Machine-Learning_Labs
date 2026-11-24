@@ -98,7 +98,7 @@ Maximum final parameter difference: 0.000e+00; per-curve maximum differences: {"
 
 ## 8. Individual project proposal
 
-project_proposal.pdf is a separate one-page proposal with name and ID. It proposes an offline Fashion-MNIST classifier, a validation-led training plan and INT8 quantization, with p95 CPU latency <=50 ms and an inference artifact <=5,000,000 bytes. These are proposed acceptance criteria, not achieved deployment claims. Instructor approval remains pending; no approval is fabricated.
+project_proposal.pdf is a separate one-page proposal with name and ID. The revised project, **ROJOB - Lightweight Fabric Defect Detection for Garment Quality Control**, proposes an AITEX normal-versus-defective classification baseline, compact U-Net-style defect segmentation and INT8 evaluation. Original images are partitioned before patch extraction to prevent leakage. Targets are defect recall >=90%, image-level macro-F1 >=0.85, defective-patch Dice >=0.60, p95 CPU latency <=50 ms per 256 x 256 patch and an inference artifact <=5,000,000 bytes. These are proposed acceptance criteria; the completed Fashion-MNIST pipeline experiments do not evaluate the new project. Instructor approval remains pending.
 
 ## Conclusions
 

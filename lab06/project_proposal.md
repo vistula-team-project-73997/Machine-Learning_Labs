@@ -1,26 +1,29 @@
-# Individual project proposal
+# ROJOB - Fabric defect detection
 
-**Student:** G M Robi Farhan Rojob | **Student ID:** 73997  
-**Course:** Machine Learning CII5SE039CI, Group 01  
-**Title:** Compact clothing-image classification with CPU INT8 quantization  
-**Status:** Proposal for instructor approval
+**Student:** G M Robi Farhan Rojob | **Student ID:** 73997
 
-## Problem and intended use
+**Course:** Machine Learning CII5SE039CI | **Group:** 01
 
-Build an offline classifier that maps a centered 28x28 grayscale clothing image to one of ten Fashion-MNIST categories. The deliverable is a reproducible local inference demo and an accuracy/latency/storage comparison of an FP32 baseline and an INT8 model. Scope is the benchmark's image distribution; this is not a claim of reliable real-store photograph recognition.
+**Title:** ROJOB - Lightweight Fabric Defect Detection for Garment Quality Control
 
-## Dataset and evaluation
+**Status:** Revised proposal for instructor approval
 
-Use the official Fashion-MNIST dataset: 60,000 training images and 10,000 test images. Preserve the seed-42 55,000/5,000 training/validation split used in Labs 3 and 6. Normalize using mean 0.2860 and standard deviation 0.3530. Use validation only to select a training checkpoint and quantization settings. Calibrate on a fixed 1,000-image training subset, never on validation/test. Freeze choices, then report final test accuracy, macro-F1, per-class recall and confusion matrices. Repeat baseline training for three seeds within a fixed 20-epoch budget per seed; report variation rather than selecting a seed by test score.
+## 1. Problem and intended use
 
-## Model and planned optimization
+Fashion brands need consistent garment quality, but manual inspection can miss small fabric defects. Inspired by quality-control challenges encountered while developing ROJOB, this project will build an image-based inspection prototype. Given a standardized close-up photograph of fabric, it will predict whether a visible defect is present and highlight suspicious regions for human review. The scope covers surface defects such as broken yarn, knots and contamination. The research question is whether a compact neural network can identify and localize fabric defects within strict CPU latency and model-size limits.
 
-Start with the 20,490-parameter Lab 3 CNN: two 3x3 convolution/ReLU/pooling blocks and a ten-class linear head. Train an FP32 baseline using the Lab 6 YAML/MLflow/checkpoint pipeline. Apply post-training static INT8 quantization to supported convolution/linear blocks using the PyTorch x86 CPU backend, fusing eligible convolution/ReLU operations and recording calibration indices. If operator support or accuracy is inadequate, investigate quantization-aware fine-tuning for at most five additional epochs. Report unsuccessful results as well as improvements.
+## 2. Dataset and preparation
 
-## Success metrics and deployment constraints
+Use the AITEX Fabric Image Database, described by its publisher as 245 images across seven fabric types, with normal images, defective images and pixel-level defect masks. Check duplicates and create fixed-seed training, validation and test partitions before extracting 256 x 256 patches; all patches from one original image must stay in the same partition. Training-only augmentation and class weighting will address limited data and imbalanced defect regions. Where available, separately labelled ROJOB fabric photographs will provide a pilot evaluation, reported separately from benchmark performance. Dataset source: https://www.aitex.es/afid/
 
-Target test accuracy >=90% and macro-F1 >=0.88, with INT8 accuracy degradation <=1 percentage point relative to the frozen FP32 baseline. Require serialized inference artifact <=5,000,000 bytes and p95 batch-one CPU latency <=50 ms on this Windows laptop using four inference threads. Measure 50 warm-up calls and 1,000 timed calls; include in-memory normalization and inference, excluding disk/UI input. Record median, p95, model bytes and peak process RSS. Aim for at least 2x smaller artifact, measuring speed rather than assuming INT8 is faster. The existing small FP32 model may already satisfy both hard constraints; optimization still needs an honest benefit/cost analysis.
+## 3. Proposed method and experiments
 
-## Feasibility, risks and deliverables
+Train a small CNN baseline for normal-versus-defective classification, then a compact U-Net-style segmentation model to predict defect regions. The segmentation output will produce a highlighted mask and an image-level inspection decision. Compare classification performance across both models and evaluate segmentation quality for the latter. Evaluate the segmentation model before and after INT8 quantization to measure quality, storage and latency trade-offs. Calibration will use training data only. Record configurations, checkpoints and experiments using YAML and MLflow. Select decision thresholds and model settings on validation data, then evaluate frozen choices on the untouched test set.
 
-Stage 1: lock data/splits and reproduce baseline. Stage 2: calibrate/quantize and validate operator support. Stage 3: freeze choices, run final accuracy and latency checks, then package the demo, configs, MLflow evidence and a concise report. CPU quantized-kernel support, calibration sensitivity and benchmark-to-photo domain shift are the main risks. Instructor approval is requested before treating this plan as the approved individual project; the targets above are proposed, not achieved results.
+## 4. Proposed success metrics
+
+Target defect recall >=90%, image-level macro-F1 >=0.85 and defect-region Dice score >=0.60, with Dice measured on defective test patches. Require a final serialized inference model <=5,000,000 bytes (5 MB) and batch-one p95 CPU latency <=50 ms for one 256 x 256 fabric patch. Measure preprocessing, inference and mask postprocessing using four CPU threads, 50 warm-up calls and 1,000 timed calls. Record median/p95 latency, model bytes and peak process memory. Report full-image scanning time separately.
+
+## 5. Deliverables, feasibility and risks
+
+Stage 1: audit data and reproduce the classification baseline. Stage 2: train segmentation and evaluate quantization. Stage 3: complete final evaluation and package reproducible code, trained models, experiment records, an upload-and-inspect demo and a comparative report. Main risks are limited data, very small defects, quantized operator support and differences between benchmark fabrics and ROJOB garments. The prototype supports human inspection. All targets are proposed outcomes to be verified experimentally; instructor approval is pending.

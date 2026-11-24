@@ -62,7 +62,11 @@ The experiment uses three separate process executions: six epochs uninterrupted;
 
 ## Understand the proposal
 
-The proposed project compares an FP32 clothing-image classifier with an INT8 version. Its targets are not measured achievements. The final inference artifact must be <=5,000,000 bytes, and measured p95 batch-one CPU response must be <=50 ms. Model file size and process RSS are separate quantities. Calibration uses training data; validation selects options; the final test set evaluates frozen choices.
+The revised ROJOB project proposes fabric-defect inspection using AITEX images and pixel-level masks. A small CNN provides normal-versus-defective classification; a compact U-Net-style model also highlights defect regions. INT8 evaluation measures the quality/storage/latency trade-off. This is a proposed project; the completed Fashion-MNIST pipeline studies above are separate evidence.
+
+Split original images before extracting patches: putting neighbouring patches from the same photograph into training and test sets can inflate measured performance. Calibration and augmentation use training data; validation selects model settings and decision thresholds; the final test set evaluates frozen choices. Report ROJOB pilot photographs separately because knit textures and photography may differ from the benchmark.
+
+Defect recall measures the fraction of defective patches flagged. Macro-F1 weights both image-level classes equally. Dice measures overlap between predicted and annotated defect regions; the >=0.60 target is evaluated on defective test patches. Additional proposed targets are recall >=90%, macro-F1 >=0.85, an inference artifact <=5,000,000 bytes and p95 batch-one CPU response <=50 ms for one 256 x 256 patch. Include preprocessing and mask postprocessing in that latency; report full-image scanning time separately. Model file size and process RSS are separate quantities. Dataset source: https://www.aitex.es/afid/
 
 The one-page proposal still needs instructor approval. Read it and decide whether you can explain and carry out the stated plan.
 

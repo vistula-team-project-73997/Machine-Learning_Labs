@@ -12,6 +12,8 @@ The full assignment trains the unchanged Lab 3 CNN on all 55,000 training exampl
 
 Read `report.md` for measured results, `study_guide.md` for explanations, `lab6 explanation.pdf` for the companion guide and `project_proposal.pdf` for the one-page proposal. Open `results/experiment_dashboard.html` for an offline experiment overview. `TASK_CHECKLIST.md` maps every requirement to evidence. The supplied manual is preserved under `references/`.
 
+Task 8 now proposes **ROJOB - Lightweight Fabric Defect Detection for Garment Quality Control**: an AITEX classification baseline, compact defect segmentation and INT8 evaluation, targeting <=50 ms p95 CPU latency per 256 x 256 patch and a <=5 MB inference model. `proposal.md` and `project_proposal.md` contain the same revised text; `project_proposal.pdf` is the one-page version for instructor review. These are planned project experiments. The completed Lab 6 training-pipeline studies below use Fashion-MNIST.
+
 The single YAML config specifies the seed, data, model, optimizer settings, scheduler definitions, tracking directory and study budgets. Study-specific settings are derived from this object and saved/logged explicitly. The official Fashion-MNIST raw data are already in the existing course `data/` folder. Portable users must supply the same dataset or set `dataset.download: true` for torchvision to obtain it. Dataset archives are excluded from the submission ZIP.
 
 To continue a partially completed study suite without rerunning completed experiments:

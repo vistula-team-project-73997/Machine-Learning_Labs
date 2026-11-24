@@ -90,9 +90,11 @@ All 21 completed MLflow runs and 119 training epochs have measured evidence.
 
 Read lab06/report.md, lab06/study_guide.md and lab06/lab6 explanation.pdf.
 Open lab06/results/experiment_dashboard.html for the offline experiment view.
-The one-page lab06/project_proposal.pdf covers a compact INT8 clothing-image
-classifier with <=50 ms p95 CPU latency and <=5 MB artifact targets. These
-are proposed constraints; instructor approval remains pending.
+The revised one-page lab06/project_proposal.pdf proposes ROJOB fabric defect
+inspection using an AITEX classification baseline, compact defect segmentation
+and INT8 evaluation. Targets include <=50 ms p95 CPU latency per 256 x 256
+patch and a <=5 MB inference model. Read lab06/proposal.md for the same text.
+These are proposed project outcomes; instructor approval remains pending.
 
 This is AI-assisted preparation. The recorded verification passes, the earlier
 labs are preserved, and no work has been sent or published externally.
